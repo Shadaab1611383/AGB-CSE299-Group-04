@@ -1,0 +1,35 @@
+
+
+
+
+
+
+CREATE TABLE MEMBERS_OF_PAIRLAMENT(ID INT(7) PRIMARY KEY ,
+                                   NAME VARCHAR(50),
+                                   OWN_AREA_NAME varchar(50),
+                                   WORKING_AREA_NAME varchar(50),
+                                   TOTAL_AREA VARCHAR(50),
+                                   DEVELOPMENT_PROGRESS_RATE VARCHAR(50))
+
+
+
+CREATE TABLE NEW_MEMBERS_OF_PAIRLAMENT(ID INT(7) PRIMARY KEY ,
+                                   NAME VARCHAR(50),
+                                   OWN_AREA_NAME varchar(50),
+                                   WORKING_AREA_NAME varchar(50),
+                                   TOTAL_AREA VARCHAR(50),
+                                   DEVELOPMENT_PROGRESS_RATE VARCHAR(50))
+
+
+CREATE TABLE VILLAGES(ID INT(7) PRIMARY KEY ,
+                                   NAME VARCHAR(50),
+                                   TOTAL_AREA VARCHAR(50),
+                                   DEVELOPMENT_PROGRESS_RATE VARCHAR(50)))
+
+
+
+
+CREATE TABLE NEW_VILLAGES(ID INT(7) PRIMARY KEY ,
+                                   NAME VARCHAR(50),
+                                   TOTAL_AREA VARCHAR(50),
+                                   DEVELOPMENT_PROGRESS_RATE VARCHAR(50))
