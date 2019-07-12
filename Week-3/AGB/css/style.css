@@ -1,0 +1,54 @@
+.carousel-inner img {
+    width: 100%;
+}
+
+.mop a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.mop a:hover{
+    color: rgba(108,171,221);
+}
+
+.nov a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nov a:hover{
+    color: rgba(108,171,221);
+}
+
+hr.hr-1{
+    border-top: 3px solid rgb(59, 100, 134);
+}
+
+.noti-row{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.noti-p{
+
+    font: 25px bold;
+}
+
+/*.image-col{
+
+    background-color: aqua;
+    
+}*/
+
+.comp-header{
+
+    border: 3px solid rgb(45, 87, 122);
+}
+
+.bg-db, .bg-nt, .bg-ra, .bg-comp{
+
+    background-color: rgb(108,171,221);
+}
+
+.ra-p p{
+    font-size: 25px;
+}
