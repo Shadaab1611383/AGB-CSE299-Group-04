@@ -26,4 +26,8 @@ class ComplaintController extends Controller
 
         return redirect('/complaint')->with('message', "Complaint has been Received!!");
     }
+
+    
 }
+
+

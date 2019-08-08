@@ -32,29 +32,36 @@
 
   <div id="wrapper">
 
+  @if($message = Session::get('message'))
+            <h3 class="text-center text-success">{{ $message }}</h3>
+        @endif
+
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('home') }}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Manage Notifications</span>
+          <span>Manage Action Against Complaint</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="Man-Rec-Act.html">
+
+      <li class="nav-item active dropdown">
+        <a class="nav-link" href="{{ route('cproj') }}">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Manage Recent Activity</span>
+          <span>Manage Current Projects</span>
         </a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Manage Employees</span></a>
+          <span>Manage MP's</span></a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Manage Villages</span></a>
+          <span>Manage Seats/Areas</span></a>
       </li>
     </ul>
 
@@ -62,10 +69,11 @@
 
       <div class="container-fluid">
 
-<form action="" method="post">
+<form action="{{ route('cproj.save') }}" method="post">
+{{ csrf_field() }}
   	<div class="form-group">
-  		<label for="notify">Notification:</label>
-  		<textarea name="Notice" class="form-control" rows="5" id="notify"></textarea>
+  		<label for="cproj">Current Project:</label>
+  		<textarea name="action" class="form-control" rows="3" id="cproj"></textarea>
 	</div>  
   	<button type="submit" class="btn btn-primary">Submit</button>
 </form>

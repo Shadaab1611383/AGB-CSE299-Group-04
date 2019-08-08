@@ -128,7 +128,7 @@
                     <a class="nav-link" href="#">Notification</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"href="#">Recent Activity</a>
+                    <a class="nav-link"href="#">Action Against Complaint</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"href="{{ route('complain') }}">Complaint</a>
@@ -195,7 +195,7 @@
 <section>
     <div class="container-fluid mt-5" style="background-color: rgb(67, 106, 138)">
         <img class="mx-auto d-block pt-3 mb-3" src="{{ asset('front') }}/village.png" alt="village_logo" width="145" height="160">
-        <h1 class="text-center text-capitalize pt-4 nov"><a href="">Number of Villages</a></h1>
+        <h1 class="text-center text-capitalize pt-4 nov"><a href="">Areas/Seats</a></h1>
         <hr class="w-25 mx-auto" style="background-color: rgb(108,171,221)">
         <h2 class="text-center text-capitalize pb-1" style="color: whitesmoke">37</h2>
         <p class="text-center pb-3" style="color: whitesmoke">Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse, magnam ex iure est delectus harum officiis quos eveniet adipisci ad laborum quis fugiat! Nemo.</p>
@@ -204,7 +204,7 @@
 
 <section>
     <div class="container-fluid mt-5 pb-3">
-        <h1 class="text-center text-capitalize">Latest Adopted Village</h1>
+        <h1 class="text-center text-capitalize">Latest Added Seats</h1>
         <hr class="w-25 mx-auto hr-1">
     </div>
 
