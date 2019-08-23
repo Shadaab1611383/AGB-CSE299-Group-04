@@ -13,7 +13,7 @@ class CreateCprojTable extends Migration
      */
     public function up()
     {
-        Schema::create('cproj', function (Blueprint $table) {
+        Schema::create('cprojects', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('current_project');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateCprojTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cproj');
+        Schema::dropIfExists('cprojects');
     }
 }

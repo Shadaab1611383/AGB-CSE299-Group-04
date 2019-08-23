@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Cproject;
+use App\AAComplaint;
 
 class HomeController extends Controller
 {
@@ -37,9 +39,22 @@ class HomeController extends Controller
 
         $cproj = new Cproject();
         $cproj->current_project = $request->action;
-        
         $cproj->save();
 
-        return redirect('/cproj')->with('message', "Complaint has been Received!!");
+        return redirect('/cproj')->with('message', "Project has been saved Successfully!!");
     }
+
+    public function saveAAcomplaint(Request $request){
+
+        $aacmp = new Aacomplaint();
+        $aacmp->Complaint = $request->cmpname;
+        $aacmp->ActionTaken = $request->action2;
+        $aacmp->save();
+
+        return redirect('/aacomplaint')->with('message', "Project has been saved Successfully!!");
+    }
+
+
+
+    
 }

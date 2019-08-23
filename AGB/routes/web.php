@@ -13,7 +13,11 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('dashboard');
+
+Route::get('/projects/current-projects', 'CprojectController@ShowToUsers')->name('cprojects.show');
+Route::get('/projects/aacomplaint', 'AacomplaintsController@FrontAa')->name('aacomplaint.show');
+
 
 
 
@@ -23,8 +27,8 @@ Route::post('/complaint/submit', 'ComplaintController@saveComplaint')->name('com
 Route::get('/cproj', 'HomeController@showCproj')->name('cproj');
 Route::post('/cproj/submit', 'HomeController@saveCproj')->name('cproj.save');
 
-Route::get('/aacomplaint', 'HomeController@index')->name('aacomplaint');
-Route::post('/aacomplint/submit', 'HomeController@index')->name('aacomplaint.save');
+Route::get('/aacomplaint', 'HomeController@index')->name('agc');
+Route::post('/aacomplint/submit', 'HomeController@saveAAcomplaint')->name('aacomplaint.save');
 
 
 Auth::routes();

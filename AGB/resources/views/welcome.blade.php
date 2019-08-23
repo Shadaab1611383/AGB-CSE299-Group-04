@@ -128,10 +128,13 @@
                     <a class="nav-link" href="#">Notification</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"href="#">Action Against Complaint</a>
+                    <a class="nav-link"href="{{ route('aacomplaint.show') }}">Action Against Complaint</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"href="{{ route('complain') }}">Complaint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('cprojects.show') }}">Current Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled"href="">Profile</a>

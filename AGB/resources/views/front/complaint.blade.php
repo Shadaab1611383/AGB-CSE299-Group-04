@@ -22,20 +22,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Dashboard</a>
+                    <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Notification</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"href="#">Action Aginst Complaint</a>
+                    <a class="nav-link" href="{{ route('aacomplaint.show') }}">Action Aginst Complaint</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active"href="#">Complaint<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="{{ route('complain') }}">Complaint<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link disabled"href="#">Profile</a>
+                    <a class="nav-link active" href="{{ route('cprojects.show') }}">Current Projects<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Profile</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

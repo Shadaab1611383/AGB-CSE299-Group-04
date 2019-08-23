@@ -15,10 +15,9 @@ class CreateMPSTable extends Migration
     {
         Schema::create('m_p_s', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('seat');
             $table->string('name');
-            $table->string('email');
             $table->string('area');
-            $table->string('picture');
             $table->timestamps();
         });
     }
