@@ -12,13 +12,17 @@
   <title>SB Admin - Dashboard</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="{{asset('admin')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Page level plugin CSS-->
-  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="{{asset('admin')}}/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="{{asset('admin')}}/css/sb-admin.css" rel="stylesheet">
+
+  @if($message = Session::get('message'))
+            <h3 class="text-center text-success">{{ $message }}</h3>
+        @endif
 
 </head>
 
@@ -39,23 +43,21 @@
 
       <div class="container-fluid">
 
-<form action="{{}}" method="post">
+<form action="{{ route('mmp.save') }}" method="post">
+{{ csrf_field() }}
+  	<div class="form-group">
+    	<label for="">Seat:</label>
+    	<input name="mpseat" type="text" class="form-control" id="">
+  	</div>
   	<div class="form-group">
     	<label for="">Name:</label>
-    	<input type="text" class="form-control" id="">
-  	</div>
-  	<div class="form-group">
-    	<label for="">Area/Seat:</label>
-    	<input type="text" class="form-control" id="">
+    	<input name="mpname" type="text" class="form-control" id="">
   	</div> 
   	<div class="form-group">
-    	<label for="">Serial No:</label>
-    	<input type="text" class="form-control" id="">
+    	<label for="">Area:</label>
+    	<input name="mparea" type="text" class="form-control" id="">
   	</div> 
-  	<div class="form-group">
-    	<label for="">Party:</label>
-    	<input type="text" class="form-control" id="">
-  	</div>
+  	
   	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
 

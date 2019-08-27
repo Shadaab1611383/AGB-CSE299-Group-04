@@ -14,13 +14,13 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="mngMP.html">
+        <a class="nav-link" href="{{ route('mmp') }}">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Manage MP's</span></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="mngSeat.html">
+        <a class="nav-link" href="{{ route('area') }}">
           <i class="fas fa-fw fa-table"></i>
           <span>Manage Seats/Areas</span></a>
       </li>

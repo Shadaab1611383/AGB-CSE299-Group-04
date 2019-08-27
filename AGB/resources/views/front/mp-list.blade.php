@@ -26,13 +26,13 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link active"href="{{ route('aacomplaint.show') }}">Action Aginst Complaint</a>
+                    <a class="nav-link"href="{{ route('aacomplaint.show') }}">Action Against Complaint</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"href="{{ route('complain') }}">Complaint</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('cprojects.show') }}">Current Projects</a>
+                    <a class="nav-link active" href="{{ route('cprojects.show') }}">Current Projects</a>
                 </li>
                 
             </ul>
@@ -46,38 +46,36 @@
 
 <section>
     <div class="container mt-5">
-        <h1 class="text-center text-capitalize comp-header pb-2" style="background-color: whitesmoke;color: tomato">Action Against Complaint</h1>
-    </div>
-</section>
-
-<section>
-    <div class="container mt-5">
-    <table class="table">
+        <h1 class="text-center text-capitalize comp-header pb-2" style="background-color: whitesmoke;color: tomato">Members of Parliament</h1>
+        <table class="table">
         <thead>
         <tr>
        
         <th>ID</th>
-        <th>Complaint</th>
-        <th>Action Taken</th>
+        <th>Seat</th>
+        <th>Name</th>
+        <th>Area</th>
         <th>Last Updated</th>
         </tr>
         </thead>
-        @foreach($aacomplaints as $aacomplaint)
+        @foreach($members as $member)
         <tbody>
         <tr>
-        <td>{{ $aacomplaint->id }}</td>
-        <td>{{ $aacomplaint->Complaint }}</td>
-        <td>{{ $aacomplaint->ActionTaken }}</td>
-        <td>{{ $aacomplaint->updated_at }}</td>
+        <td>{{ $member->id }}</td>
+        <td>{{ $member->seat }}</td>
+        <td>{{ $member->name }}</td>
+        <td>{{ $member->area }}</td>
+        <td>{{ $member->updated_at }}</td>
 
         </tr>
-        </tbody>
+        <tbody>
         @endforeach
 
         </table>
     </div>
-
 </section>
+<section>
+    <div class="container mt-5">
 
         
 

@@ -20,6 +20,10 @@
   <!-- Custom styles for this template-->
   <link href="{{asset('admin')}}/css/sb-admin.css" rel="stylesheet">
 
+  @if($message = Session::get('message'))
+            <h3 class="text-center text-success">{{ $message }}</h3>
+        @endif
+
 </head>
 
 <body id="page-top">

@@ -24,9 +24,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Notification</a>
-                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('aacomplaint.show') }}">Action Aginst Complaint</a>
                 </li>
@@ -38,9 +36,7 @@
                     <a class="nav-link active" href="{{ route('cprojects.show') }}">Current Projects<span class="sr-only">(current)</span></a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Profile</a>
-                </li>
+                
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

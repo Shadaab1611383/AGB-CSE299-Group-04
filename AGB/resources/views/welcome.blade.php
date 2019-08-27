@@ -122,12 +122,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ route('dashboard') }}">Dashboard<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Notification</a>
-                </li>
-                <li class="nav-item">
+                
                     <a class="nav-link"href="{{ route('aacomplaint.show') }}">Action Against Complaint</a>
                 </li>
                 <li class="nav-item">
@@ -136,9 +133,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('cprojects.show') }}">Current Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled"href="">Profile</a>
-                </li>
+                
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -188,20 +183,20 @@
 <section>
     <div class="container-fluid mt-5" style="background-color: rgb(67, 106, 138)">
         <img class="mx-auto d-block pt-3" src="{{ asset('front') }}/parliament.png" alt="parliament_logo" width="150" height="200">
-        <h1 class="text-center text-capitalize mop"><a href="">Members of Parliament</a></h1>
+        <h1 class="text-center text-capitalize mop"><a href="{{ route('frontmp.show') }}">Members of Parliament</a></h1>
         <hr class="w-25 mx-auto" style="background-color: rgb(108,171,221)">
-        <h2 class="text-center text-capitalize pb-1" style="color: whitesmoke">135</h2>
-        <p class="text-center pb-3" style="color: whitesmoke">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed at dolores doloribus, dignissimos iure fugit ab, reprehenderit aut omnis saepe, quo quas suscipit sapiente?</p>
+        /*<h2 class="text-center text-capitalize pb-1" style="color: whitesmoke"></h2>
+       <p class="text-center pb-3" style="color: whitesmoke"></p>*/
     </div>
 </section>
 
 <section>
     <div class="container-fluid mt-5" style="background-color: rgb(67, 106, 138)">
         <img class="mx-auto d-block pt-3 mb-3" src="{{ asset('front') }}/village.png" alt="village_logo" width="145" height="160">
-        <h1 class="text-center text-capitalize pt-4 nov"><a href="">Areas/Seats</a></h1>
+        <h1 class="text-center text-capitalize pt-4 nov"><a href="{{ route('frontarea.show') }}">Areas/Seats</a></h1>
         <hr class="w-25 mx-auto" style="background-color: rgb(108,171,221)">
-        <h2 class="text-center text-capitalize pb-1" style="color: whitesmoke">37</h2>
-        <p class="text-center pb-3" style="color: whitesmoke">Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse, magnam ex iure est delectus harum officiis quos eveniet adipisci ad laborum quis fugiat! Nemo.</p>
+        /*<h2 class="text-center text-capitalize pb-1" style="color: whitesmoke"></h2>
+        <p class="text-center pb-3" style="color: whitesmoke"></p>*/
     </div>
 </section>
 

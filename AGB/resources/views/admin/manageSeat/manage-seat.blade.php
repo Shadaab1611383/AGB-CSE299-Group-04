@@ -12,13 +12,13 @@
   <title>SB Admin - Dashboard</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="{{asset('admin')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Page level plugin CSS-->
-  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="{{asset('admin')}}/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="{{asset('admin')}}/css/sb-admin.css" rel="stylesheet">
 
 </head>
 
@@ -33,20 +33,21 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    include('admin.includes.navbar')
+    @include('admin.includes.navbar')
 
     <div id="content-wrapper">
 
       <div class="container-fluid">
 
-<form action="" method="post">
+<form action="{{ route('area.save') }}" method="post">
+{{ csrf_field() }}
   	<div class="form-group">
     	<label for="">Name:</label>
-    	<input type="text" class="form-control" id="">
+    	<input name="areaname" type="text" class="form-control" id="">
   	</div>
   	<div class="form-group">
-    	<label for="">Number:</label>
-    	<input type="text" class="form-control" id="">
+    	<label for="">Seat No:</label>
+    	<input name="areano" type="text" class="form-control" id="">
   	</div> 
   	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
